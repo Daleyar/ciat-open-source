@@ -19,8 +19,8 @@ def sub(a, b):
 # Multiply function
 # a -- multiplicand
 # b -- multiplier
-#def mult(a, b):
-#    return a * b
+def mult(a, b):
+   return a * b
 
 # Divide function
 # a -- dividend

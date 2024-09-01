@@ -25,8 +25,8 @@ def mult(a, b):
 # Divide function
 # a -- dividend
 # b -- divisor
-#def div(a, b):
-#    return a / b
+def div(a, b):
+   return a / b
 
 
 # -------------------------------------------------------- #

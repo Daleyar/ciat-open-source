@@ -43,7 +43,14 @@ def div(a, b):
 # a -- dividend
 # b -- divisor
 def mod(a, b):
-   return a % b
+    try:
+        return a % b
+    except ZeroDivisionError:
+        print("Error: Modulo by zero is not allowed!")
+        return None
+    except Exception as e:
+        print(f"Error during modulo operation: {e}")
+        return None
 
 # -------------------------------------------------------- #
 

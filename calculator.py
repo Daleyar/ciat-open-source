@@ -19,14 +19,18 @@ def sub(a, b):
 # Multiply function
 # a -- multiplicand
 # b -- multiplier
-#def mult(a, b):
-#    return a * b
+def mult(a, b):
+    try:
+        return a * b
+    except Exception as e:
+        print(f"Error during multiplication: {e}")
+        return None
 
 # Divide function
 # a -- dividend
 # b -- divisor
-#def div(a, b):
-#    return a / b
+def div(a, b):
+   return a / b
 
 
 # -------------------------------------------------------- #

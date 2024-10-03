@@ -14,7 +14,11 @@ def add(a, b):
 # a -- minuend
 # b -- subtrahend
 def sub(a, b):
-    return a - b
+    try:
+        return a - b
+    except Exception as e:
+        print(f"Error during subtraction: {e}")
+        return None
 
 # Multiply function
 # a -- multiplicand

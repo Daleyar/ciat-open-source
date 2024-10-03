@@ -20,13 +20,24 @@ def sub(a, b):
 # a -- multiplicand
 # b -- multiplier
 def mult(a, b):
-   return a * b
+    try:
+        return a * b
+    except Exception as e:
+        print(f"Error during multiplication: {e}")
+        return None
 
 # Divide function
 # a -- dividend
 # b -- divisor
 def div(a, b):
-   return a / b
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed!")
+        return None
+    except Exception as e:
+        print(f"Error during division: {e}")
+        return None
 
 # Modulo function
 # a -- dividend
